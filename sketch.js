@@ -76,7 +76,7 @@ if (stats === "jogar") {
 text ("score"+score,width-100,15)
 score=score+Math.round (getFrameRate()/30) 
 //pular quando tecla de espaço for pressionada
-if(touches.length>0||keyDown("space")&&trex.y>height-40){
+if(touches.length>0||keyDown("space")&&trex.y>height-20){
   trex.velocityY = -10;
   pulo.play ()
   touches=[]
